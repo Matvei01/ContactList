@@ -8,6 +8,7 @@
 import UIKit
 
 class DetaiInformationViewController: UIViewController {
+    
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
