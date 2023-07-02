@@ -13,7 +13,7 @@
 		A0AF5B0028630B4D00716C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0AF5AFF28630B4D00716C5D /* Assets.xcassets */; };
 		A0AF5B0328630B4D00716C5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AF5B0128630B4D00716C5D /* LaunchScreen.storyboard */; };
 		A0AF5B0D2863185300716C5D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B0C2863185300716C5D /* DataManager.swift */; };
-		A0AF5B0F286318A000716C5D /* DetaiInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B0E286318A000716C5D /* DetaiInformationViewController.swift */; };
+		A0AF5B0F286318A000716C5D /* DetailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B0E286318A000716C5D /* DetailInformationViewController.swift */; };
 		A0AF5B11286318DC00716C5D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B10286318DC00716C5D /* TabBarViewController.swift */; };
 		A0AF5B132863192300716C5D /* ContactListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B122863192300716C5D /* ContactListTableViewController.swift */; };
 		A0AF5B152863193800716C5D /* SectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AF5B142863193800716C5D /* SectionTableViewController.swift */; };
@@ -29,7 +29,7 @@
 		A0AF5B0228630B4D00716C5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0AF5B0428630B4D00716C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0AF5B0C2863185300716C5D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		A0AF5B0E286318A000716C5D /* DetaiInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiInformationViewController.swift; sourceTree = "<group>"; };
+		A0AF5B0E286318A000716C5D /* DetailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationViewController.swift; sourceTree = "<group>"; };
 		A0AF5B10286318DC00716C5D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		A0AF5B122863192300716C5D /* ContactListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListTableViewController.swift; sourceTree = "<group>"; };
 		A0AF5B142863193800716C5D /* SectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		A037BA0E286ED7F100F3E782 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A0AF5B0E286318A000716C5D /* DetaiInformationViewController.swift */,
+				A0AF5B0E286318A000716C5D /* DetailInformationViewController.swift */,
 				A0AF5B10286318DC00716C5D /* TabBarViewController.swift */,
 				A0AF5B122863192300716C5D /* ContactListTableViewController.swift */,
 				A0AF5B142863193800716C5D /* SectionTableViewController.swift */,
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0AF5B0F286318A000716C5D /* DetaiInformationViewController.swift in Sources */,
+				A0AF5B0F286318A000716C5D /* DetailInformationViewController.swift in Sources */,
 				A0AF5B132863192300716C5D /* ContactListTableViewController.swift in Sources */,
 				A0AF5B0D2863185300716C5D /* DataManager.swift in Sources */,
 				A0AF5AF728630B4C00716C5D /* AppDelegate.swift in Sources */,

@@ -24,14 +24,14 @@ struct Person {
         let emails = DataManager.shared.emails.shuffled()
         let phones = DataManager.shared.phones.shuffled()
         
-        let itarationCount = min(
+        let iterationCount = min(
             names.count,
             surnames.count,
             emails.count,
             phones.count
         )
         
-        for index in 0..<itarationCount {
+        for index in 0..<iterationCount {
             let person = Person(
                 name: names[index],
                 surname: surnames[index],

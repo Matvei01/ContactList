@@ -8,12 +8,12 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    
     private let persons = Person.getPersons()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         guard let contactListVC = viewControllers?.first as? ContactListTableViewController else { return }
         contactListVC.persons = persons
         

@@ -8,7 +8,7 @@
 import UIKit
 
 class ContactListTableViewController: UITableViewController {
-
+    
     var persons: [Person] = []
     
     // MARK: - Table view data source
@@ -16,7 +16,7 @@ class ContactListTableViewController: UITableViewController {
                             numberOfRowsInSection section: Int) -> Int {
         persons.count
     }
-
+    
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -37,7 +37,7 @@ class ContactListTableViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let indexPath = tableView.indexPathForSelectedRow {
-            guard let detailVC = segue.destination as? DetaiInformationViewController else { return }
+            guard let detailVC = segue.destination as? DetailInformationViewController else { return }
             detailVC.persons = persons[indexPath.row]
         }
     }

@@ -1,5 +1,5 @@
 //
-//  DetaiInformationViewController.swift
+//  DetailInformationViewController.swift
 //  ContactList
 //
 //  Created by Matvei Khlestov on 22.06.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetaiInformationViewController: UIViewController {
+class DetailInformationViewController: UIViewController {
     
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
@@ -16,7 +16,7 @@ class DetaiInformationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = persons.fullname
         
         phoneLabel.text = "Phone: \(persons.phone)"
