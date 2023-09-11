@@ -1,5 +1,5 @@
 //
-//  SectionTableViewController.swift
+//  SectionViewController.swift
 //  ContactList
 //
 //  Created by Matvei Khlestov on 22.06.2022.
@@ -7,11 +7,37 @@
 
 import UIKit
 
-class SectionTableViewController: UITableViewController {
+final class SectionViewController: UITableViewController {
     
+    // MARK: - Public Properties
     var persons: [Person] = []
     
-    // MARK: - Table view data source
+    // MARK: - Private Properties
+    private let cellID = "contactID"
+    
+    // MARK: - Life cycle Methods
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configure()
+    }
+}
+
+// MARK: - Private Methods
+extension SectionViewController {
+    private func configure() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
+        title = "Contacts"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+}
+
+// MARK: - Table view data source
+extension SectionViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         
         persons.count
@@ -22,13 +48,13 @@ class SectionTableViewController: UITableViewController {
         
         let headerLabel = UILabel(frame: CGRect(
             x: 10,
-            y: 5,
-            width: 200,
-            height: 22)
+            y: 0,
+            width: tableView.frame.width,
+            height: 35)
         )
         
         headerLabel.font = .boldSystemFont(ofSize: 20)
-        headerLabel.text = "\(persons[section].fullname)"
+        headerLabel.text = "\(persons[section].fullName)"
         
         let header = UIView()
         header.backgroundColor = .secondarySystemBackground
@@ -50,7 +76,7 @@ class SectionTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(
-            withIdentifier: "sectionContactCell",
+            withIdentifier: cellID,
             for: indexPath
         )
         
@@ -69,7 +95,10 @@ class SectionTableViewController: UITableViewController {
         
         return cell
     }
-    
+}
+
+// MARK: - Table view delegate
+extension SectionViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
